@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,9 @@
     </div>
     <div class="carousel">
     </div>
-    <div class="paralaxe">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/cine.jpg"
+    alt="salle de cinéma en parallax">
+
     </div>
     <div class="presentation" id="presentation">
     </div>
@@ -30,6 +32,10 @@
     <?php include "footer.php"?>
   </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- Pour la parallax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <!-- Mes fichiers js -->
   <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

@@ -28,15 +28,13 @@ header {
   height: 25em;
   background-color: red;
 }
-.paralaxe {
-  display: flex;
-  top: 66.5em;
-  height: 20em;
-  background-color: black;
+.parallax-window {
+  min-height: 25em;
+  background-color: transparent;
 }
 .presentation {
   display: flex;
-  top: 86.5em; 
+  top: 86.5em;
   height: 30em;
   background-color: yellow;
 }
