@@ -16,6 +16,15 @@
   <?php include "header.php"?>
   </header>
   <main>
+    <div class="slider">
+    </div>
+    <div class="carousel">
+    </div>
+    <div class="paralaxe">
+    </div>
+    <div class="presentation" id="presentation">
+    </div>
+
   </main>
   <footer>
     <?php include "footer.php"?>

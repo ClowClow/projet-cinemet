@@ -1,4 +1,4 @@
-/*css pour la mise en place générale de la page */ 
+/*css pour la mise en place générale de la page */
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +10,33 @@ body {
 }
 main {
     flex: 1;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.slider {
+  display: flex;
+  top: 5em;
+  height: 36.5em;
+  background-color: green;
+}
+.carousel {
+  display: flex;
+  top: 41.5em;
+  height: 25em;
+  background-color: red;
+}
+.paralaxe {
+  display: flex;
+  top: 66.5em;
+  height: 20em;
+  background-color: black;
+}
+.presentation {
+  display: flex;
+  top: 86.5em; 
+  height: 30em;
+  background-color: yellow;
 }
