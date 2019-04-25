@@ -1,8 +1,21 @@
-.navbar {
-  height: 5em;
-  background-color: blue;
+/*css du header */
+.logo{
+  text-transform: uppercase;
 }
+.navbar {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+  height: 3em;
+  padding-top: 2em;
+  background-color: #000;
+  color: #fff;
+}
+a.nav, a.nav:visited {
+  color: white; 
+}
+/*css du footer */
 footer {
-  height: 5em; 
+  height: 5em;
   background-color: grey;
 }
