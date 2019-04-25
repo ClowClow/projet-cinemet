@@ -1,0 +1,13 @@
+/*css pour la mise en place générale de la page */ 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}

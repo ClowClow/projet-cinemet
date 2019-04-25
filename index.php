@@ -7,17 +7,20 @@
 
   <title>Cinemet Index</title>
 
+  <link href="css/reset.css" type="text/css" rel="stylesheet"/>
   <link href="css/index.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
+  <header>
   <?php include "header.php"?>
-
+  </header>
+  <main>
+  </main>
+  <footer>
+    <?php include "footer.php"?>
+  </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
 </body>
-
-<footer>
-  <?php include "footer.php"?>
-</footer>
 </html>
