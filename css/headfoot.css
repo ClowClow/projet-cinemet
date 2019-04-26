@@ -12,8 +12,14 @@
   color: #fff;
 }
 a.nav, a.nav:visited {
-  color: white; 
+  color: white;
 }
+a.nav:hover {
+  padding: 0.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
 /*css du footer */
 footer {
   height: 5em;

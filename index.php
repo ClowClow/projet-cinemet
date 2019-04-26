@@ -25,6 +25,7 @@
 
     </div>
     <div class="presentation" id="presentation">
+      <h1 class="prestitre">Cine-<span class="bold">met</span></h1>
     </div>
 
   </main>

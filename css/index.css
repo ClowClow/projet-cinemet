@@ -16,8 +16,12 @@ header {
   width: 100%;
   z-index: 10;
 }
+.bold {
+  font-weight: bolder;
+}
 a, a:hover, a:visited, a:active, a:focus{
   text-decoration: none;
+  outline-style: none;
 }
 /* css du slide */
 .slider {
@@ -32,13 +36,24 @@ a, a:hover, a:visited, a:active, a:focus{
   height: 25em;
   background-color: red;
 }
+/* css de la parallax */
 .parallax-window {
   min-height: 25em;
   background-color: transparent;
 }
+/* css de la présentation */
 .presentation {
   display: flex;
   top: 86.5em;
   height: 30em;
-  background-color: yellow;
+  background-color: #fff;
+}
+.prestitre {
+  padding: 1.5em;
+  font-size: 300%;
+  font-variant: small-caps;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
+  0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000,
+  0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
 }
