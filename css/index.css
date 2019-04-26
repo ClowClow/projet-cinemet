@@ -23,18 +23,18 @@ a, a:hover, a:visited, a:active, a:focus{
   text-decoration: none;
   outline-style: none;
 }
-/* css du slide */
+/* css du slider */
 .slider {
   display: flex;
   top: 5em;
   height: 36.5em;
-  background-color: green;
+  background-color: white;
 }
 .carousel {
   display: flex;
   top: 41.5em;
   height: 25em;
-  background-color: red;
+  background-color: #000;
 }
 /* css de la parallax */
 .parallax-window {

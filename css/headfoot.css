@@ -1,6 +1,8 @@
 /*css du header */
+
 .logo{
   text-transform: uppercase;
+  color: #000;
 }
 .navbar {
   display: grid;
@@ -8,20 +10,30 @@
   text-align: center;
   height: 3em;
   padding-top: 2em;
-  background-color: #000;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
 }
 a.nav, a.nav:visited {
-  color: white;
+  color: #000;
 }
 a.nav:hover {
-  padding: 0.5em;
   font-weight: bold;
+  padding: 2em;
+  background-color: #000;
   color: #fff;
+  opacity: 0.9;
 }
-
 /*css du footer */
-footer {
-  height: 5em;
-  background-color: grey;
+.one {
+
+}
+.foot {
+  margin: 0 auto;
+  width: 80%;
+}
+.two {
+  text-align: center;
+  height: 2em;
+  padding-top: 1em;
+  background-color: #fff;
 }
