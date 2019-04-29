@@ -66,7 +66,7 @@ a, a:hover, a:visited, a:active, a:focus{
   font-size: 300%;
 }
 .leftarrow {
-
+1.5
 }
 /* css de la parallax */
 .parallax-window {
@@ -79,7 +79,7 @@ a, a:hover, a:visited, a:active, a:focus{
 /* css de la présentation */
 .presentation {
   display: grid;
-  grid-template-columns: 50% 50%; 
+  grid-template-columns: 50% 50%;
   top: 86.5em;
   height: 30em;
   background-color: #fff;
@@ -96,4 +96,18 @@ a, a:hover, a:visited, a:active, a:focus{
 }
 .prestexte {
   padding-left: 1em;
+}
+#first{
+  position: relative;
+  top: 4em;
+  left: 2em;
+  z-index: 2;
+  border: 0.3em solid #000;
+}
+#second{
+  position: relative;
+  top: 14em;
+  right: 4em;
+  z-index: 1;
+  border: 0.3em solid #000;
 }

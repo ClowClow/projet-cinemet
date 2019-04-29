@@ -42,9 +42,9 @@
       <p class="prestexte">Le meilleur du cinéma s'invite dans votre salon !!</p>
     </div>
     <div class="images">
-      <img src="images/metropolis.jpg" alt="cinéma métropolis"
+      <img id="first"src="images/metropolis.jpg" alt="cinéma métropolis"
       width="300em" height="200em"/>
-      <img src="images/salon.jpg" alt="image représentant un salon"
+      <img id="second" src="images/salon.jpg" alt="image représentant un salon"
       width="300em" height="200em"/>
     </div>
   </div>
