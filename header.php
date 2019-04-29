@@ -7,4 +7,5 @@
     <div><a href="#" class="nav">Nos films</a></div>
     <div><a href="#" class="nav">Contact</a></div>
   </div>
+  <script type="text/javascript" src="js/header.js"></script>
 </header>

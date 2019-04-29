@@ -16,23 +16,39 @@
   <?php include "header.php"?>
   </header>
   <main>
-    <div class="slider">
-    </div>
+    <!-- code pour le slider -->
+      <div class="slider-container">
+			<!--images du slide-->
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img id="slide" src="images/slides/slide1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img id="slide" src="images/slides/slide2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+							<div class="numbertext"></div>
+							<img id="slide" src="images/slides/slide3.jpg" style="width:100%">
+					</div>
+    </div> <!-- Fin du slider -->
     <!-- code pour le carroussel -->
     <div class="carrousel">
       <div class="leftarrow"><</div>
-      <div class="frame"><img id="frame" src="images/bella.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/marvel.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/dumbo.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/avengers.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/corgi.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/shazam.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/dblanche.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/bella.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/marvel.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/dumbo.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/avengers.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/corgi.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/shazam.jpg" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/dblanche.jpg" width="200em" height="400em"></div>
       <div class="rightarrow">></div>
-    </div>
+    </div> <!-- Fin du carrousel -->
     <!-- code pour la parallax -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="images/cine.jpg"
-    alt="salle de cinéma en parallax">
+    alt="salle de cinéma en parallax"><!-- Fin de la parallax -->
     <!-- code pour la présentation -->
     </div>
     <div class="presentation" id="presentation">
@@ -47,7 +63,7 @@
       <img id="second" src="images/salon.jpg" alt="image représentant un salon"
       width="300em" height="200em"/>
     </div>
-  </div>
+  </div> <!-- Fin de la présentation-->
   </main>
   <footer>
     <?php include "footer.php"?>

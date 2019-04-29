@@ -13,6 +13,14 @@
   color: #000;
   background-color: #fff;
 }
+header > .navbar {
+  height: 50px;
+  width: 100%;
+  font-family: 'Arvo';
+  opacity: 0.8;
+  text-transform: uppercase;
+  position: fixed;
+}
 a.nav, a.nav:visited {
   color: #000;
 }
