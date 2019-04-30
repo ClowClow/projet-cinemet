@@ -20,19 +20,29 @@
       <div class="slider-container">
 			<!--images du slide-->
 					<div class="mySlides">
-						<div class="numbertext"></div>
 						<img id="slide" src="images/slides/slide1.jpg" style="width:100%">
+            <div class="text">CINE-MET : comme au cinéma !!</div>
 					</div>
 
 					<div class="mySlides">
-						<div class="numbertext"></div>
 						<img id="slide" src="images/slides/slide2.jpg" style="width:100%">
+            <div class="text">CINE-MET : comme au cinéma !!</div>
 					</div>
 
 					<div class="mySlides">
-							<div class="numbertext"></div>
 							<img id="slide" src="images/slides/slide3.jpg" style="width:100%">
+              <div class="text">CINE-MET : comme au cinéma !!</div>
 					</div>
+          <!-- Boutons précédent et suivant -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br/>
+          <!-- Cercles sous le slider -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
     </div> <!-- Fin du slider -->
     <!-- code pour le carroussel -->
     <div class="carrousel">
