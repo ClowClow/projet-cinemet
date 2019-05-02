@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+img {
+  width: 15em;
+  height: 25em;
+}
+.titrefilms {
+  font-size: 3em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+.gallerie {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+#item, #item1, #item2, #item3, #item4, #item5, #item6, #item7 {
+  border: 0.3em solid #000;
+  border-radius: 10%;
+  margin: 1em 1em;
+  width: 15em;
+  height: 25em;
+  overflow: hidden;
+}
