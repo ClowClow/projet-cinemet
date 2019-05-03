@@ -220,5 +220,6 @@
     /* Le texte */
     .text {
       font-size: 1em;
+      bottom: 4em;
     }
   }
