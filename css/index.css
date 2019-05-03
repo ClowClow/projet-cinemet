@@ -193,3 +193,32 @@
     z-index: 1;
     border: 0.3em solid #000;
   }
+  /*///MEDIA QUERIES///*/
+  @media (min-width: 1700px){
+    #slide /* définis une hauteur aux images */
+    {
+      height: 55em;
+    }
+    .prev, .next /* réglages des boutons précédent et suivant */
+    {
+      top: 55%;
+    }
+    /* Le texte */
+    .text {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 1400px){
+    #slide /* définis une hauteur aux images */
+    {
+      height: 33em;
+    }
+    .prev, .next /* réglages des boutons précédent et suivant */
+    {
+      top: 55%;
+    }
+    /* Le texte */
+    .text {
+      font-size: 1em;
+    }
+  }
