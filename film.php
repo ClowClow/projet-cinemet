@@ -16,7 +16,7 @@
   <?php include "header.php"?>
   </header>
   <main>
-    <h1 class="titrefilms">Nos films bonjour</h1>
+    <h1 class="titrefilms">Nos films</h1>
     <div class="gallerie">
     <span id="item">
       <img src="images/films/avengers.jpg" alt="à définir"/>
