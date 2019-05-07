@@ -5,19 +5,19 @@
 body {
   text-align: center;
 }
-.blockfilm{
+.blockacteur {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.titrefilm {
+.titreacteur {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3em;
   font-size: 3em;
 }
-.imagefilm {
+.imageacteur {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ body {
   height: 25em;
   overflow: hidden;
 }
-.presentationfilm {
+.presentationacteur {
   display: flex;
   flex-wrap: wrap;
   padding-top: 3em;

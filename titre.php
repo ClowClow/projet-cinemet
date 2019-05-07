@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -19,7 +20,7 @@
     <div class="imagefilm">
       <!-- afficher ici l'image du film -->
     </div>
-    <div class="presentation">
+    <div class="presentationfilm">
       <p>Blablabla</p>
     </div>
   </div>
