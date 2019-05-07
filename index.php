@@ -16,6 +16,7 @@
   <?php include "header.php"?>
   </header>
   <main>
+    <?php include 'connexion-bdd.php'?>
     <!-- code pour le slider -->
       <div class="slider-container">
 			<!--images du slide-->
