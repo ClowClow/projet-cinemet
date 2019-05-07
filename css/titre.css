@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0
+}
+body {
+  text-align: center;
+}
+.blockfilm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titrefilm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  font-size: 3em;
+}
+.imagefilm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0.3em solid #000;
+  border-radius: 10%;
+  margin: 1em 1em;
+  width: 15em;
+  height: 25em;
+  overflow: hidden;
+}
+.presentation {
+  display: flex; 
+  flex-wrap: wrap;
+  padding-top: 3em;
+}
