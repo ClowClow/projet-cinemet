@@ -14,10 +14,10 @@
   <?php include "header.php"?>
   </header>
   <main>
-    <h1 class="titrefilm">Titre ici !</h1> /*cf comment afficher un titre avec la bdd*/
+    <h1 class="titrefilm">Titre ici !</h1> <!-- cf comment afficher un titre avec la bdd-->
     <div class="blockfilm">
     <div class="imagefilm">
-      /*afficher ici l'image du film*/
+      <!-- afficher ici l'image du film -->
     </div>
     <div class="presentation">
       <p>Blablabla</p>

@@ -40,6 +40,12 @@
       <img src="images/films/dumbo.jpg" alt="à définir"/>
     </span>
 </div>
+<div class="linkfilms">
+  <a href="listfilm.php"><button>Liste des films disponibles</button></a>
+  <a href="listacteur.php"><button>Liste par acteurs</button></a>
+  <a href="listrealisateur.php"><button>Liste par réalisateur</button></a>
+</div>
+<br/>
   </main>
   <footer>
     <?php include "footer.php"?>
