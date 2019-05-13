@@ -14,7 +14,7 @@
 <body>
   <?php
   $bdd = new PDO('mysql:host=localhost;dbname=metropolis;charset=utf8','chloe','notzelda');
-  $requete = "SELECT * FROM film";
+  $requete = "SELECT * FROM FILM";
   $reponse = $bdd->query($requete);
   ?>
   <header>
@@ -23,16 +23,17 @@
   <main>
     <h1 class="titrefilms">Nos films</h1>
     <div class="gallerie">
-    <span id="item">
+
       <?php
               while($donnees = $reponse->fetch())
               {
                 ?>
+      <span id="item">
       <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir"/>
+      </span>
       <?php
     };
     ?>
-    </span>
     <!--<span id="item1">
       <img src="images/films/marvel.jpg" alt="à définir"/>
     </span>
