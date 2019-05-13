@@ -12,6 +12,11 @@
 </head>
 
 <body>
+  <?php
+  $bdd = new PDO('mysql:host=localhost;dbname=metropolis;charset=utf8','chloe','notzelda');
+  $requete = "SELECT * FROM film";
+  $reponse = $bdd->query($requete);
+  ?>
   <header>
   <?php include "header.php"?>
   </header>
@@ -19,9 +24,16 @@
     <h1 class="titrefilms">Nos films</h1>
     <div class="gallerie">
     <span id="item">
-      <img src="images/films/avengers.jpg" alt="à définir"/>
+      <?php
+              while($donnees = $reponse->fetch())
+              {
+                ?>
+      <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir"/>
+      <?php
+    };
+    ?>
     </span>
-    <span id="item1">
+    <!--<span id="item1">
       <img src="images/films/marvel.jpg" alt="à définir"/>
     </span>
     <span id="item2">
@@ -38,7 +50,7 @@
     </span>
     <span id="item6">
       <img src="images/films/dumbo.jpg" alt="à définir"/>
-    </span>
+    </span>-->
 </div>
 <div class="linkfilms">
   <a href="listfilm.php"><button>Liste des films disponibles</button></a>
