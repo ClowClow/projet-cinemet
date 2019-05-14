@@ -11,20 +11,32 @@
   <link href="css/titre.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
+  <?php
+    include "connexion-bdd.php";
+    $requete = "SELECT * FROM FILM WHERE id_film=". $_GET["id_film"];
+    $reponse = $bdd->query($requete);
+    while ($donnees = $reponse->fetch())
+  {
+?>
   <header>
   <?php include "header.php"?>
   </header>
   <main>
-    <h1 class="titrefilm">Titre ici !</h1> <!-- cf comment afficher un titre avec la bdd-->
+    <h1 class="titrefilm"><?php echo $donnees["Titre"];?></h1> <!-- cf comment afficher un titre avec la bdd-->
+
     <div class="blockfilm">
     <div class="imagefilm">
-      <!-- afficher ici l'image du film -->
+      <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir" width="300em" height="400em"/>
     </div>
     <div class="presentationfilm">
-      <p>Blablabla</p>
+      <p><?php echo $donnees["Description"];?></p>
     </div>
   </div>
   </main>
+  <?php
+    }
+    $reponse->closeCursor();
+  ?>
   <footer>
     <?php include "footer.php"?>
   </footer>

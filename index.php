@@ -12,11 +12,15 @@
 </head>
 
 <body>
+  <?php
+  include "connexion-bdd.php";
+  $requete = "SELECT * FROM FILM";
+  $reponse = $bdd->query($requete);
+  ?>
   <header>
   <?php include "header.php"?>
   </header>
   <main>
-    <?php include 'connexion-bdd.php'?>
     <!-- code pour le slider -->
       <div class="slider-container">
 			<!--images du slide-->
@@ -48,14 +52,14 @@
     <!-- code pour le carroussel -->
     <div class="carrousel">
       <div class="leftarrow"><</div>
-      <div class="frame"><img id="frame" src="images/films/bella.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/marvel.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/dumbo.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/avengers.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/corgi.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/shazam.jpg" width="200em" height="400em"></div>
-      <div class="frame"><img id="frame" src="images/films/dblanche.jpg" width="200em" height="400em"></div>
-      <div class="rightarrow">></div>
+      <?php
+              while($donnees = $reponse->fetch())
+              {
+      ?>
+      <div class="frame"><img id="frame" src="images/films/<?php echo $donnees ["image"];?>" width="200em" height="400em"></div>
+      <?php
+              };
+      ?>
     </div> <!-- Fin du carrousel -->
     <!-- code pour la parallax -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="images/cine.jpg"

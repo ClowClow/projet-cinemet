@@ -13,7 +13,8 @@
 
 <body>
   <?php
-  $bdd = new PDO('mysql:host=localhost;dbname=metropolis;charset=utf8','chloe','notzelda');
+  include "connexion-bdd.php";
+  /*$bdd = new PDO('mysql:host=localhost;dbname=metropolis;charset=utf8','chloe','notzelda');*/
   $requete = "SELECT * FROM FILM";
   $reponse = $bdd->query($requete);
   ?>
@@ -29,29 +30,13 @@
               {
                 ?>
       <span id="item">
-      <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir"/>
+      <a href="titre.php?id_film=<?php echo $donnees["id_film"];?>">
+        <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir"/>
+      </a>
       </span>
       <?php
     };
     ?>
-    <!--<span id="item1">
-      <img src="images/films/marvel.jpg" alt="à définir"/>
-    </span>
-    <span id="item2">
-      <img src="images/films/shazam.jpg" alt="à définir"/>
-    </span>
-    <span id="item3">
-      <img src="images/films/dblanche.jpg" alt="à définir"/>
-    </span>
-    <span id="item4">
-      <img src="images/films/corgi.jpg" alt="à définir"/>
-    </span>
-    <span id="item5">
-      <img src="images/films/bella.jpg" alt="à définir"/>
-    </span>
-    <span id="item6">
-      <img src="images/films/dumbo.jpg" alt="à définir"/>
-    </span>-->
 </div>
 <div class="linkfilms">
   <a href="listfilm.php"><button>Liste des films disponibles</button></a>
