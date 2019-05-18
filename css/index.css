@@ -3,18 +3,28 @@
     margin: 0;
     padding: 0;
   }
+  html, body {
+    height: 100%;
+  }
   body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
-  main {
-    flex: 1;
   }
   header {
     position: fixed;
     width: 100%;
     z-index: 15;
+  }
+  main {
+    min-height: 2500px;
+    margin-bottom: -48px;
+  }
+  main:after {
+    display: block;
+    content: "";
+  }
+  footer, main:after {
+    height:48px;
   }
   .bold {
     font-weight: bolder;
@@ -164,6 +174,7 @@
     top: 86.5em;
     height: 30em;
     background-color: #fff;
+    margin-bottom: 10em;
   }
   .prestitre {
     padding-top: 1.5em;

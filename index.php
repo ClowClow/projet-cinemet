@@ -17,10 +17,10 @@
   $requete = "SELECT * FROM FILM";
   $reponse = $bdd->query($requete);
   ?>
+  <main>
   <header>
   <?php include "header.php"?>
   </header>
-  <main>
     <!-- code pour le slider -->
       <div class="slider-container">
 			<!--images du slide-->

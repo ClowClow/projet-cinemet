@@ -22,14 +22,14 @@
   <?php include "header.php"?>
   </header>
   <main>
-    <h1 class="titrefilm"><?php echo $donnees["Titre"];?></h1> <!-- cf comment afficher un titre avec la bdd-->
+    <h1 class="titrefilm"><?php echo $donnees["titre"];?></h1> <!-- cf comment afficher un titre avec la bdd-->
 
     <div class="blockfilm">
     <div class="imagefilm">
-      <img src="images/films/<?php echo $donnees["image"];?>" alt="à définir" width="300em" height="400em"/>
+      <img src="images/films/<?php echo $donnees["affiche"];?>" alt="à définir" width="300em" height="400em"/>
     </div>
     <div class="presentationfilm">
-      <p><?php echo $donnees["Description"];?></p>
+      <p><?php echo $donnees["description"];?></p>
     </div>
   </div>
   </main>
