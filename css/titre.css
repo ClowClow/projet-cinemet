@@ -33,9 +33,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 10em;
+  height: 11em;
   padding: 3em;
   font-size: 1.5em;
   color : #fff;
   background-color: #000;
   border-radius: 1em;
+  overflow: scroll;
 }

@@ -11,19 +11,35 @@
   <link href="css/realisateur.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
+  <?php
+  include "connexion-bdd.php";
+  $requete = "SELECT * FROM REALISATEUR";
+  $reponse = $bdd->query($requete);
+  ?>
   <header>
   <?php include "header.php"?>
   </header>
   <main>
-    <h1 class="nomrealisateur">Nom ici !</h1> <!-- cf comment afficher un titre avec la bdd-->
+
+    <?php
+            while($donnees = $reponse->fetch())
+            {
+    ?>
+    <h1 class="nomrealisateur"><?php echo $donnees ["nom"];?>
+    <br/>
+    <?php echo $donnees ["prenom"];?></h1> <!-- cf comment afficher un titre avec la bdd-->
     <div class="blockrealisateur">
     <div class="imagerealisateur">
-      <!-- afficher ici l'image du film -->
+      <img id="pictrea" src="images/realisateur/<?php echo $donnees ["photo"];?>" width="250em" height="400em"/>
     </div>
     <div class="presentationrealisateur">
-      <p>Blablabla</p>
+      <p>Date de naissance</p>
+      <p><?php echo $donnees ["date_naissance"];?></p>
     </div>
   </div>
+  <?php
+          };
+  ?>
   </main>
   <footer>
     <?php include "footer.php"?>

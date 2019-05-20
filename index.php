@@ -56,7 +56,7 @@
               while($donnees = $reponse->fetch())
               {
       ?>
-      <div class="frame"><img id="frame" src="images/films/<?php echo $donnees ["image"];?>" width="200em" height="400em"></div>
+      <div class="frame"><img id="frame" src="images/films/<?php echo $donnees ["affiche"];?>" width="200em" height="400em"></div>
       <?php
               };
       ?>
