@@ -32,6 +32,9 @@
       <p><?php echo $donnees["description"];?></p>
     </div>
   </div>
+  <a href="realisateur.php">
+    <button>Réalisateur</button>
+  </a>
   </main>
   <?php
     }
