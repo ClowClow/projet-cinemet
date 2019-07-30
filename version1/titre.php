@@ -32,14 +32,14 @@
       <p><?php echo $donnees["description"];?></p>
     </div>
   </div>
-  <a href="realisateur.php">
+  <a href="realisateur.php?id_realisateur=<?php echo $donnees["id_realisateur"];?>">
     <button>Réalisateur</button>
   </a>
-  </main>
   <?php
     }
     $reponse->closeCursor();
   ?>
+  </main>
   <footer>
     <?php include "footer.php"?>
   </footer>

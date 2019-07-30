@@ -12,19 +12,17 @@
 </head>
 <body>
   <?php
-  include "connexion-bdd.php";
-  $requete = "SELECT * FROM REALISATEUR";
+  $requete = "SELECT * FROM FILM, REALISATEUR, REALISE WHERE id_realisateur=". $_GET["id_realisateur"].", REALISE.id_film=FILM.id_film and REALISE.id_realisateur=REALISATEUR.id_realisateur";
   $reponse = $bdd->query($requete);
   ?>
   <header>
   <?php include "header.php"?>
   </header>
   <main>
-
     <?php
-            while($donnees = $reponse->fetch())
-            {
-    ?>
+    while ($donnees = $reponse->fetch())
+    {
+     ?>
     <h1 class="nomrealisateur"><?php echo $donnees ["nom"];?>
     <br/>
     <?php echo $donnees ["prenom"];?></h1> <!-- cf comment afficher un titre avec la bdd-->
