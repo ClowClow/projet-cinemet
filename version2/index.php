@@ -10,10 +10,14 @@
   <title>Cinemet Index</title>
 
   <link href="css/reset.css" type="text/css" rel="stylesheet"/>
-
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
+    <?php include "navbar.php"; ?>
+
+  <footer>
+  </footer>
 </body>
 
 </html>
