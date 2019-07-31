@@ -15,8 +15,7 @@
 
 <body>
   <?php include "php/co_bdd.php";
-  $req = $bdd->prepare('SELECT * FROM FILM');
-  $req->execute();
+        include "php/select_film.php";
   ?>
   <?php include "navbar.php"; ?>
   <div class="container col-md-12 text-center">
