@@ -19,14 +19,16 @@
   $req->execute();
   ?>
   <?php include "navbar.php"; ?>
-  <div class="container col-md-12">
-    <h2><center>Nos films</center></h2>
-    <div class="row">
+  <div class="container col-md-12 text-center">
+    <h2 class="m-5">Nos films</h2>
+    <div class="d-inline-flex  flex-row flex-wrap justify-content-center col-md-12">
       <?php while($donnees = $req->fetch()) { ?>
-        <div class="card border-success mb-3" style="max-width: 20rem;">
-          <div class="card-header"><?php echo $donnees['titre']; ?></div>
+        <div class="card border-success m-3" style="max-width: 20rem;">
+          <div class="card-header text-success"><?php echo $donnees['titre']; ?></div>
           <div class="card-body">
-            <img class="col-md-12" src="images/films/<?php echo $donnees['affiche'] ?>" />
+            <a href="filmtype.php?id_film=<?php echo $donnees["id_film"];?>">
+              <img class="col-md-12" src="images/films/<?php echo $donnees['affiche'] ?>"/>
+            </a>
           </div>
         </div>
     <?php } ?>
