@@ -22,16 +22,16 @@
     <div class="form-group d-flex flex-row justify-content-center">
      <label for="staticName" class="col-sm-2 col-form-label">Nom d'utilisateur</label>
      <div class="col-sm-2">
-       <input type="text" class="form-control-plaintext border border-success" id="staticName" placeholder="Entrer votre nom d'utilisateur">
+       <input type="text" class="form-control-plaintext border border-info" id="staticName" placeholder="Entrer votre nom d'utilisateur">
      </div>
    </div>
    <div class="form-group d-flex flex-row justify-content-center">
      <label for="staticPassword" class="col-sm-2 col-form-label">Mot de passe</label>
      <div class="col-sm-2">
-       <input type="password" class="form-control-plaintext border border-success" id="staticPassword" placeholder="Entrer votre mot de passe">
+       <input type="password" class="form-control-plaintext border border-info" id="staticPassword" placeholder="Entrer votre mot de passe">
      </div>
    </div>
-    <button type="submit" class="btn btn-outline-success mt-5">Se connecter</button>
+    <button type="submit" class="btn btn-outline-info mt-5">Se connecter</button>
   </fieldset>
 </form>
 </center>

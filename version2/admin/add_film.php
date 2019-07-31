@@ -16,10 +16,10 @@
 <body>
   <?php include "nav_admin.php"; ?>
   <center>
-  <div class="container">
+  <div class="container col-md-6">
     <h2 class="mt-5">Cine-MET Ajouter un film</h2>
     <form method="POST" action="../php/insert_film.php">
-      <fieldset>
+      <fieldset class="mt-5">
         <div class="form-group">
           <input name="titre" type="text" placeholder="titre du film" class="form-control" required/>
         </div>

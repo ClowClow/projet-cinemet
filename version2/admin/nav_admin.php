@@ -9,6 +9,9 @@
     <li class="nav-item active">
       <a class="nav-link text-success" href="../index.php">Retour au site <span class="sr-only">(current)</span></a>
     </li>
+    <li class="nav-item active">
+      <a class="nav-link text-success" href="index_admin.php">Accueil Admin <span class="sr-only">(current)</span></a>
+    </li>
     <li class="nav-item">
       <a class="nav-link" href="portail_utilisateur.php">Gestion Utilisateurs</a>
     </li>
@@ -23,5 +26,10 @@
     <input class="form-control mr-sm-2" type="text" placeholder="Rechercher dans le site">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
   </form>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link text-info" href="#">Se déconnecter</a>
+    </li>
+  </ul>
 </div>
 </nav>

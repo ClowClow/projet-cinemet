@@ -19,9 +19,14 @@
       <a class="nav-link" href="contact.php">Contact</a>
     </li>
   </ul>
-  <form class="form-inline my-2 my-lg-0">
+  <form class="form-inline my-2 my-lg-0 ml-auto">
     <input class="form-control mr-sm-2" type="text" placeholder="Rechercher dans le site">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
   </form>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link text-info" href="inscription.php">S'inscrire</a>
+    </li>
+  </ul>
 </div>
 </nav>
