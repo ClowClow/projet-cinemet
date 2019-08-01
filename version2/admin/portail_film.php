@@ -29,7 +29,7 @@
       </a>
     </div>
     <div class="d-flex flex-row mt-3 justify-content-center">
-      <a href="#">
+      <a href="remove_film.php">
         <button class="btn btn-success">Supprimer un film</button>
       </a>
     </div>

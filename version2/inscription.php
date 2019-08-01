@@ -41,7 +41,7 @@
    </div>
    <div class="form-group d-flex flex-row justify-content-center">
      <div class="col-sm-2">
-       <input class="form-control-plaintext border border-info" placeholder="Confirmer votre mot de passe">
+       <input type="password" class="form-control-plaintext border border-info" placeholder="Confirmer votre mot de passe">
      </div>
    </div>
    <div class="form-group d-flex flex-row justify-content-center">
