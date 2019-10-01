@@ -10,7 +10,7 @@
   <title>Cinemet Attention !!</title>
 
   <link href="../css/reset.css" type="text/css" rel="stylesheet"/>
-  <link href="../css/bootstrap.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/bootswatch.css" type="text/css" rel="stylesheet"/>
   <link href="../css/general.css" type="text/css" rel="stylesheet"/>
 </head>
 
