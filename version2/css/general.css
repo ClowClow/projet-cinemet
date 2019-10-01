@@ -1,8 +1,29 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+flex-grow: 1;
+}
+
 .d-flex {
   max-width: 100% !important;
 }
+
+/*Accueil du panneau d'administration*/
 .img_accueil_admin {
   width: 70em;
   height: 40em;
   margin-top: 5em;
+}
+
+/*Page d'avertissement pour imposer la sélection d'un seul film*/
+.only_one_film {
+  width: 20em;
+  height: 20em;
+}
+.only_one_film_text {
+  font-size: 2em;
 }

@@ -24,7 +24,7 @@
       </a>
     </div>
     <div class="d-flex flex-row mt-3 justify-content-center">
-      <a href="#">
+      <a href="modify_film.php">
         <button class="btn btn-success">Modifier un film</button>
       </a>
     </div>
