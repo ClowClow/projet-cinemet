@@ -50,7 +50,7 @@
       /* on envoie la demande de confirmation par mail */
       mail($_POST['mail'], 'Confimation de votre compte',
       "Afin de valider votre compte merci de cliquer sur ce lien\n\n
-      http://localhost/github/projet-cinemet/version2/inscription.php?id=$user_id&token=$token");
+      http://localhost/github/projet-cinemet/version2/php/confirm.php?id=$user_id&token=$token");
       /* on redirige l'utilisateur vers la page de connexion */
       echo '<meta http-equiv="refresh" content="0; URL=connexion.php">';
       exit ();
