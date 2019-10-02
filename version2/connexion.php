@@ -7,18 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Cinemet Connexion Admin</title>
+  <title>Cinemet Connexion Utilisateur</title>
 
-  <link href="../css/reset.css" type="text/css" rel="stylesheet"/>
-  <link href="../css/bootswatch.css" type="text/css" rel="stylesheet"/>
-  <link href="../css/general.css" type="text/css" rel="stylesheet"/>
+  <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+  <link href="css/bootswatch.css" type="text/css" rel="stylesheet"/>
+  <link href="css/general.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
   <main>
-    <?php include "nav_co.php"; ?>
+    <?php include "navbar.php"; ?>
     <center>
-    <h2 class="mt-5">Cine-MET Connexion Administrateur</h2>
+    <h2 class="mt-5">Cine-MET Connexion</h2>
     <form class="mt-5 mb-5">
     <fieldset>
       <div class="form-group d-flex flex-row justify-content-center">
@@ -39,7 +39,7 @@
     </center>
   </main>
   <footer>
-      <?php include "../footer.php"; ?>
+      <?php include "footer.php"; ?>
   </footer>
 </body>
 
