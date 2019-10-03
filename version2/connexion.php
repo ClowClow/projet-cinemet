@@ -1,7 +1,6 @@
 <?php
-  if(session_status() == PHP_SESSION_NONE) {
-    session_start();
-  }
+  include 'php/functions.php';
+  session();
   include "php/connect.php";
  ?>
 

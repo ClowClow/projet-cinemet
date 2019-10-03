@@ -1,12 +1,7 @@
 <?php
-  if(session_status() == PHP_SESSION_NONE) {
-    session_start();
-  }
-
-  if(!isset($_SESSION['auth'])) {
-    $_SESSION['flash']['error'] = "Vous n'avez pas le droit d'accéder à cette page";
-    header('Location: connexion.php');
-  }
+  require_once 'php/functions.php';
+  session();
+  accessUser();
  ?>
 <!DOCTYPE html>
 

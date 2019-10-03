@@ -1,7 +1,6 @@
 <?php
 if (!empty($_POST) && !empty($_POST['pseudo']) && !empty($_POST['mdp'])) {
   include 'co_bdd.php';
-  include 'functions.php';
   session_start();
   $req = $bdd -> prepare('SELECT * FROM USER WHERE (`pseudo` = :pseudo
   OR `mail` = :pseudo) AND `confirmed_at` IS NOT NULL');

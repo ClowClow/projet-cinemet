@@ -7,4 +7,20 @@
     $string = "123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     return substr(str_shuffle(str_repeat($string, $length)), 0, $length);
   }
+
+  function session() {
+    if(session_status() == PHP_SESSION_NONE) {
+      session_start();
+    }
+  }
+
+  function accessUser() {
+    if(session_status() == PHP_SESSION_NONE) {
+      session_start();
+    }
+    if(!isset($_SESSION['auth'])) {
+      $_SESSION['flash']['error'] = "Vous n'avez pas le droit d'accéder à cette page";
+      header('Location: connexion.php');
+    }
+  }
  ?>
