@@ -1,3 +1,13 @@
+<?php
+  if(session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+
+  if(!isset($_SESSION['auth'])) {
+    $_SESSION['flash']['error'] = "Vous n'avez pas le droit d'accéder à cette page";
+    header('Location: connexion.php');
+  }
+ ?>
 <!DOCTYPE html>
 
 <html>
@@ -19,7 +29,7 @@
     <?php include "navbar.php"; ?>
     <center>
     <h2 class="mt-5">Cine-MET Votre compte utilisateur !</h2>
-    
+
     </center>
   </main>
   <footer>

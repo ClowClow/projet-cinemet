@@ -1,3 +1,10 @@
+<?php
+  if(session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+  include "php/connect.php";
+ ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -19,18 +26,20 @@
     <?php include "navbar.php"; ?>
     <center>
     <h2 class="mt-5">Cine-MET Connexion</h2>
-    <form class="mt-5 mb-5">
+    <form class="mt-5 mb-5" method="POST">
     <fieldset>
       <div class="form-group d-flex flex-row justify-content-center">
-       <label for="staticName" class="col-sm-2 col-form-label">Nom d'utilisateur</label>
+       <label for="staticName" class="col-sm-2 col-form-label">Nom d'utilisateur ou email</label>
        <div class="col-sm-2">
-         <input type="text" class="form-control-plaintext border border-info" id="staticName" placeholder="Entrer votre nom d'utilisateur">
+         <input type="text" name="pseudo" class="form-control-plaintext border border-info"
+         id="staticName" placeholder="Entrer votre nom d'utilisateur">
        </div>
      </div>
      <div class="form-group d-flex flex-row justify-content-center">
        <label for="staticPassword" class="col-sm-2 col-form-label">Mot de passe</label>
        <div class="col-sm-2">
-         <input type="password" class="form-control-plaintext border border-info" id="staticPassword" placeholder="Entrer votre mot de passe">
+         <input type="password" name="mdp" class="form-control-plaintext border border-info"
+         id="staticPassword" placeholder="Entrer votre mot de passe">
        </div>
      </div>
       <button type="submit" class="btn btn-outline-info mt-5">Se connecter</button>

@@ -24,9 +24,19 @@
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
   </form>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link text-info" href="inscription.php">S'inscrire</a>
-    </li>
+    <?php
+      if (isset($_SESSION['auth'])) { ?>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="php/logout.php">Se déconnecter</a>
+        </li>
+      <?php } else { ?>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="inscription.php">S'inscrire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="connexion.php">Se connecter</a>
+        </li>
+      <?php } ?>
   </ul>
 </div>
 </nav>
