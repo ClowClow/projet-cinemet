@@ -23,7 +23,7 @@
   <main>
     <?php include "navbar.php"; ?>
     <center>
-    <h2 class="mt-5">Cine-MET Votre compte utilisateur !</h2>
+    <h2 class="mt-5">Cine-MET Compte utilisateur <?php echo ($_SESSION['auth']['pseudo']); ?> !</h2>
 
     </center>
   </main>
